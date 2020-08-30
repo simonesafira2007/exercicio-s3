@@ -84,6 +84,48 @@ function recebeUmNumero(num){
     }
      console.log(recebeUmNumero(6))
 
+
+ // 6) crie uma função que receba um número inteiro e imprima os números no console em ordem, de 1 até o número.
+// Porém, para todos os números que forem múltiplos de 3, imprima na tela "banana" ao invés do número; para os 
+//números múltiplos de 5, imprima "biscoito". 
+//Para números múltiplos de 3 e 5, imprima "biscoito de banana". Exemplo, recebendo 15 o resultado será:
+// 1
+// 2
+// banana
+// 4
+// biscoito
+// banana
+// 7
+// 8
+// banana
+// biscoito
+// 11
+// banana
+// 13
+// 14
+// biscoito de banana
+
+function imprimaNoConsole (numero){
+   
+
+    for(let i = 1; i <= numero ; i++){
+        console.log(i)
+    if(i % 3 === 0 && i % 5 === 0){
+        console.log('biscoito de banana')
+    }else if (i % 5 === 0){
+        console.log('biscoito')
+    }else if (i % 3 === 0){
+        console.log('banana')
+       
+    }
+
+}
+
+}
+console.log(imprimaNoConsole(15))
+    
+
+
  
 // 6) Crie uma função com as seguintes características:
 // 1. A função deve receber 3 números
